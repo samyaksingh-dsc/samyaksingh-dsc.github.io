@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samyak Singh - Portfolio</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -16,14 +17,23 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Home</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="projects.html">Projects</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="blogs.html">Blogs</a>
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#blogs">Blogs</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -32,50 +42,157 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header class="hero bg-primary text-white text-center py-5">
-        <div class="container">
-            <h1>Welcome to My Portfolio</h1>
-            <p class="lead">I'm Samyak Singh, a Business Analyst and Data Enthusiast</p>
+    <!-- Home Section -->
+    <header id="home" class="vh-100 d-flex align-items-center justify-content-center text-white" style="background: url('images/hero-bg.jpg') no-repeat center center / cover;">
+        <div class="text-center">
+            <h1 class="display-3">Hi, I'm Samyak Singh</h1>
+            <p class="lead">Business Analyst & Data Enthusiast</p>
+            <a href="#contact" class="btn btn-primary mt-3">Contact Me</a>
         </div>
     </header>
 
     <!-- About Me Section -->
-    <section id="about" class="p-5 text-center bg-light">
+    <section id="about" class="p-5 bg-light">
         <div class="container">
-            <h2>About Me</h2>
-            <p class="lead">As a driven and passionate business analyst, I specialize in leveraging data insights to inform strategic business decisions and optimize performance. With expertise in data analysis and visualization, I aim to turn complex data into actionable insights that drive success.</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="images/about-me.jpg" alt="About Me" class="img-fluid rounded-circle">
+                </div>
+                <div class="col-md-6">
+                    <h2>About Me</h2>
+                    <p>I'm a driven business analyst who specializes in leveraging data insights to inform strategic business decisions and optimize performance. With expertise in data analysis and visualization, I turn complex data into actionable insights that drive success.</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="p-5 text-center">
+    <section id="experience" class="p-5">
         <div class="container">
             <h2>Experience</h2>
-            <ul class="list-unstyled">
-                <li><strong>Intelligence Analyst at Cyber Defense and Intelligence Centre:</strong> Conducted deep analysis of dark web sources, leading to enhanced security measures (April 2024 - July 2024)</li>
-                <li><strong>Business Analyst at Fablo Platforms:</strong> Boosted business growth through GAP and risk analyses, enhancing vendor partnerships and customer satisfaction (December 2020 - April 2022)</li>
-                <li><strong>Developer Intern at Raja Ramanna Center for Advanced Technology:</strong> Designed an automated system, reducing manual labor by 30% (January 2020 - April 2020)</li>
+            <ul class="timeline">
+                <li>
+                    <h4>Intelligence Analyst at Cyber Defense and Intelligence Centre</h4>
+                    <p>Conducted deep analysis of dark web sources, leading to enhanced security measures (April 2024 - July 2024)</p>
+                </li>
+                <li>
+                    <h4>Business Analyst at Fablo Platforms</h4>
+                    <p>Boosted business growth through GAP and risk analyses, enhancing vendor partnerships and customer satisfaction (December 2020 - April 2022)</p>
+                </li>
+                <li>
+                    <h4>Developer Intern at Raja Ramanna Center for Advanced Technology</h4>
+                    <p>Designed an automated system, reducing manual labor by 30% (January 2020 - April 2020)</p>
+                </li>
             </ul>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="p-5 text-center bg-light">
+    <section id="skills" class="p-5 bg-light">
         <div class="container">
             <h2>Skills</h2>
             <div class="row">
                 <div class="col-md-4">
                     <h4>Business Analysis</h4>
-                    <p>Requirement Gathering, UAT, Functional Specifications</p>
+                    <ul>
+                        <li>Requirement Gathering</li>
+                        <li>UAT</li>
+                        <li>Functional Specifications</li>
+                    </ul>
                 </div>
                 <div class="col-md-4">
                     <h4>Data Analysis</h4>
-                    <p>Tableau, Excel, Power BI, SQL, Data Cleaning, Trend Analysis</p>
+                    <ul>
+                        <li>Tableau</li>
+                        <li>Excel</li>
+                        <li>Power BI</li>
+                        <li>SQL</li>
+                    </ul>
                 </div>
                 <div class="col-md-4">
                     <h4>Technical Skills</h4>
-                    <p>Java, Python, C++, Azure, Firebase</p>
+                    <ul>
+                        <li>Java, Python, C++</li>
+                        <li>Azure, Firebase</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="p-5">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="images/sales-performance.jpg" class="card-img-top" alt="Sales Performance Analysis">
+                        <div class="card-body">
+                            <h5 class="card-title">Sales Performance Analysis</h5>
+                            <p class="card-text">Interactive dashboards for key sales metrics, enhancing performance and decision-making.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="images/spotify-youtube.jpg" class="card-img-top" alt="Spotify and YouTube Data Exploration">
+                        <div class="card-body">
+                            <h5 class="card-title">Spotify and YouTube Data Exploration</h5>
+                            <p class="card-text">Analysis of track popularity and engagement, optimizing content strategies.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="images/big-basket.jpg" class="card-img-top" alt="Big Basket Market Analysis">
+                        <div class="card-body">
+                            <h5 class="card-title">Big Basket Market Analysis</h5>
+                            <p class="card-text">Enhanced consumer insights and sales strategies, driving engagement and efficiency.</p>
+                            <a href="#" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="p-5 bg-light">
+        <div class="container">
+            <h2>Blogs</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="images/blog1.jpg" class="card-img-top" alt="Blog 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog Title 1</h5>
+                            <p class="card-text">A brief description of the blog content.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="images/blog2.jpg" class="card-img-top" alt="Blog 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog Title 2</h5>
+                            <p class="card-text">A brief description of the blog content.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="images/blog3.jpg" class="card-img-top" alt="Blog 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog Title 3</h5>
+                            <p class="card-text">A brief description of the blog content.</p>
+                            <a href="#" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
